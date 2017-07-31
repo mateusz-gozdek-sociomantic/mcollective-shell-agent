@@ -25,7 +25,7 @@ Run commands with the local shell
 %install
 rm -rf %{buildroot}
 %{__install} -d -m0755 %{buildroot}%{_libexecdir}/mcollective/mcollective
-cp -a lib/mcollective/agent lib/mcollective/application %{buildroot}%{_libexecdir}/mcollective/mcollective
+cp -a agent application %{buildroot}%{_libexecdir}/mcollective/mcollective
 
 %clean
 rm -rf %{buildroot}
